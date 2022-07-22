@@ -1,196 +1,10 @@
-const dados = [
-    {
-        "month": "July",
-        "log": 269,
-        "msg": "Try to reboot the AGP transmitter, maybe it will program the 1080p capacitor!",
-        "user": "Carol.Hamill42"
-    },
-    {
-        "month": "September",
-        "log": 295,
-        "msg": "The SQL pixel is down, connect the mobile bus so we can connect the XML program!",
-        "user": "Morgan45"
-    },
-    {
-        "month": "February",
-        "log": 366,
-        "msg": "connecting the interface won't do anything, we need to reboot the 1080p EXE bandwidth!",
-        "user": "Dejuan_Crona90"
-    },
-    {
-        "month": "March",
-        "log": 14,
-        "msg": "If we synthesize the microchip, we can get to the CSS driver through the bluetooth HDD interface!",
-        "user": "Johanna.Treutel98"
-    },
-    {
-        "month": "April",
-        "log": 522,
-        "msg": "We need to quantify the optical SMTP monitor!",
-        "user": "Alverta.Herman"
-    },
-    {
-        "month": "September",
-        "log": 742,
-        "msg": "Use the redundant GB matrix, then you can navigate the cross-platform program!",
-        "user": "Reina10"
-    },
-    {
-        "month": "August",
-        "log": 372,
-        "msg": "I'll input the back-end IB program, that should array the CSS alarm!",
-        "user": "Vance71"
-    },
-    {
-        "month": "October",
-        "log": 77,
-        "msg": "I'll quantify the optical SQL bus, that should circuit the CSS sensor!",
-        "user": "Elmo71"
-    },
-    {
-        "month": "December",
-        "log": 613,
-        "msg": "transmitting the card won't do anything, we need to transmit the online COM system!",
-        "user": "Terry.Buckridge"
-    },
-    {
-        "month": "December",
-        "log": 754,
-        "msg": "We need to program the optical ADP port!",
-        "user": "Maurine.Block9"
-    },
-    {
-        "month": "September",
-        "log": 41,
-        "msg": "Try to bypass the COM feed, maybe it will parse the solid state bandwidth!",
-        "user": "Alivia_Osinski"
-    },
-    {
-        "month": "January",
-        "log": 738,
-        "msg": "The SQL pixel is down, connect the mobile bus so we can connect the XML program!",
-        "user": "Morgan45"
-    },
-    {
-        "month": "March",
-        "log": 626,
-        "msg": "connecting the interface won't do anything, we need to reboot the 1080p EXE bandwidth!",
-        "user": "Dejuan_Crona90"
-    },
-    {
-        "month": "November",
-        "log": 763,
-        "msg": "If we synthesize the microchip, we can get to the CSS driver through the bluetooth HDD interface!",
-        "user": "Johanna.Treutel98"
-    },
-    {
-        "month": "July",
-        "log": 536,
-        "msg": "We need to quantify the optical SMTP monitor!",
-        "user": "Alverta.Herman"
-    },
-    {
-        "month": "March",
-        "log": 251,
-        "msg": "Use the redundant GB matrix, then you can navigate the cross-platform program!",
-        "user": "Reina10"
-    },
-    {
-        "month": "September",
-        "log": 299,
-        "msg": "I'll input the back-end IB program, that should array the CSS alarm!",
-        "user": "Vance71"
-    },
-    {
-        "month": "December",
-        "log": 10,
-        "msg": "I'll quantify the optical SQL bus, that should circuit the CSS sensor!",
-        "user": "Elmo71"
-    },
-    {
-        "month": "October",
-        "log": 31,
-        "msg": "transmitting the card won't do anything, we need to transmit the online COM system!",
-        "user": "Terry.Buckridge"
-    },
-    {
-        "month": "August",
-        "log": 671,
-        "msg": "We need to program the optical ADP port!",
-        "user": "Maurine.Block9"
-    },
-    {
-        "month": "November",
-        "log": 491,
-        "msg": "Try to bypass the COM feed, maybe it will parse the solid state bandwidth!",
-        "user": "Alivia_Osinski"
-    },
-    {
-        "month": "January",
-        "log": 673,
-        "msg": "The SQL pixel is down, connect the mobile bus so we can connect the XML program!",
-        "user": "Morgan45"
-    },
-    {
-        "month": "May",
-        "log": 410,
-        "msg": "connecting the interface won't do anything, we need to reboot the 1080p EXE bandwidth!",
-        "user": "Dejuan_Crona90"
-    },
-    {
-        "month": "January",
-        "log": 562,
-        "msg": "If we synthesize the microchip, we can get to the CSS driver through the bluetooth HDD interface!",
-        "user": "Johanna.Treutel98"
-    },
-    {
-        "month": "August",
-        "log": 302,
-        "msg": "We need to quantify the optical SMTP monitor!",
-        "user": "Alverta.Herman"
-    },
-    {
-        "month": "May",
-        "log": 605,
-        "msg": "Use the redundant GB matrix, then you can navigate the cross-platform program!",
-        "user": "Reina10"
-    },
-    {
-        "month": "October",
-        "log": 670,
-        "msg": "I'll input the back-end IB program, that should array the CSS alarm!",
-        "user": "Vance71"
-    },
-    {
-        "month": "December",
-        "log": 769,
-        "msg": "I'll quantify the optical SQL bus, that should circuit the CSS sensor!",
-        "user": "Elmo71"
-    },
-    {
-        "month": "October",
-        "log": 104,
-        "msg": "transmitting the card won't do anything, we need to transmit the online COM system!",
-        "user": "Terry.Buckridge"
-    },
-    {
-        "month": "January",
-        "log": 517,
-        "msg": "We need to program the optical ADP port!",
-        "user": "Maurine.Block9"
-    },
-    {
-        "month": "February",
-        "log": 80,
-        "msg": "Try to bypass the COM feed, maybe it will parse the solid state bandwidth!",
-        "user": "Alivia_Osinski"
-    }
-];
+const fs = require('fs');
+const { val } = require('jshint/src/options');
 
-const dadosJson = JSON.stringify(dados);
-
+const dadosJson = fs.readFileSync('logNaveSbornia2.json');
 const objdados = JSON.parse(dadosJson);
 
+// Criação dos 12 arrays referentes ao mês
 var January = [];
 var February = [];
 var March = [];
@@ -204,8 +18,10 @@ var October = [];
 var November = [];
 var December = [];
 
+// Utilização do map para passar apenas o log e o usuário referente ao mês
 objdados.map(function (item, index) {
 
+    // Primeiro irá verificar so item.month corresponde ao mês e se sim irá dar um push no log e no usuário pro array do mês dele
     if (item.month == 'January') {
         January.push(item.log, item.user);
     } if (item.month == 'February') {
@@ -234,13 +50,18 @@ objdados.map(function (item, index) {
 
 });
 
+// Criação de uma variável length que irá receber todos os tamanhos dos vetores criados
 var length = 0;
+
+// Criação de um array que irá conter todos os meses e assim apenas o mês que contem o impostor será ordenado por log
 var meses = [];
 
+// Pela lógica de verificar o impostor, o impostor estará na primeira posição depois da metade dos objetos lidos
+// Aqui ocorre a concatenação da variável com o tamanho do array January
+// Como são 850 objetos lidos, o impostor pela logica já falada estará na posição 426 e a partir disso verifico qual mês ele está
 length += January.length;
-
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
 } else {
     console.log("Continue");
 }
@@ -250,8 +71,8 @@ if (January.length != 0) {
 }
 
 length += February.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
 } else {
     console.log("Continue");
 }
@@ -261,8 +82,8 @@ if (February.length != 0) {
 }
 
 length += March.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
 } else {
     console.log("Continue");
 }
@@ -272,8 +93,8 @@ if (March.length != 0) {
 }
 
 length += April.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
 } else {
     console.log("Continue");
 }
@@ -283,8 +104,8 @@ if (April.length != 0) {
 }
 
 length += May.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
 } else {
     console.log("Continue");
 }
@@ -293,42 +114,47 @@ if (May.length != 0) {
     meses = meses.concat(May);
 }
 
+// Como o ultimo mês lido foi Junho, logo o impostor está no mês de Junho
 length += June.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
+if (length >= 201) {
+    console.log("O impostor está aqui");
+
+    // Uso do console.log para apenas ver os usuários e os logs de Junho
+    console.log(June);
 } else {
     console.log("Continue");
 }
 
+// Inicio do tempo de execução para a função
+console.time('Timer');
+
+// Como não estou tratando do objeto inteiro, inicialmente eu retiro todos os usuários do array June
 if (June.length != 0) {
-    meses = meses.concat(June);
-}
+    June = June.filter(e => e !== 'Mireille.Deckow11');
+    June = June.filter(e => e !== 'Ada_Lang');
+    June = June.filter(e => e !== 'Genevieve31');
+    June = June.filter(e => e !== 'Ruth99');
+    June = June.filter(e => e !== 'Ezra_Grady44');
+    June = June.filter(e => e !== 'Cale.Kemmer55');
+    June = June.filter(e => e !== 'Ernestine9');
+    June = June.filter(e => e !== 'Sonny_Denesik53');
+    June = June.filter(e => e !== 'Maegan63');
+    June = June.filter(e => e !== 'Matilda_Cruickshank47');
+    June = June.filter(e => e !== 'Audreanne28');
+    June = June.filter(e => e !== 'Saul_Lemke');
+    June = June.filter(e => e !== 'Vergie54');
+    June = June.filter(e => e !== 'Oren_Koelpin93');
+    June = June.filter(e => e !== 'Ed10');
+    June = June.filter(e => e !== 'Cleora.Spencer');
 
-length += July.length;
-if (length >= 31) {
-    console.log("Ordena aqui");
-} else {
-    console.log("Continue");
-}
-
-if (July.length != 0) {
-    meses = meses.concat(July);
-}
-
-length += August.length;
-if (length >= 31) {
-    August = August.filter(e => e !== 'Vance71');
-    August = August.filter(e => e !== 'Maurine.Block9');
-    August = August.filter(e => e !== 'Alverta.Herman');
-
-    const countingSort = (August, n = August.length) => {
-        let k = Math.max(...August);
-        let t;
+    // Aqui inicio a função de countingSort com apenas os logs
+    const countingSort = (June, n = June.length) => {
+        let k = Math.max(...June);
 
         const freq = new Array(k + 1).fill(0);
 
         for (let i = 0; i < n; i++) {
-            f = August[i];
+            f = June[i];
             freq[f]++;
         }
 
@@ -340,7 +166,7 @@ if (length >= 31) {
 
         for (let i = n - 1; i >= 0; i--) {
 
-            f = August[i];
+            f = June[i];
             resp[freq[f] - 1] = f;
 
             freq[f] = freq[f] - 1;
@@ -348,18 +174,71 @@ if (length >= 31) {
 
         return resp;
     }
-    August = countingSort(August);
-    for (let i = 0; i < August.length; i++) {
-        if (August[i] == 302) {
-            August.splice(1, 0, 'Alverna.Herman');
+    June = countingSort(June);
+
+    // Por fim adiciono novamente os usuários a qual pertence ao seu devido log
+    for (let i = 0; i < June.length; i++) {
+        if (June[i] == 4683) {
+            June.splice(1, 0, 'Genevieve31');
         }
-        if (August[i] == 372) {
-            August.splice(3, 0, 'Vance71');
+        if (June[i] == 5634) {
+            June.splice(3, 0, 'Ed10');
         }
-        if (August[i] == 671) {
-            August.splice(5, 0, 'Maurine.Block9');
+        if (June[i] == 11158) {
+            June.splice(5, 0, 'Sonny_Denesik53');
+        }
+        if (June[i] == 12981) {
+            June.splice(7, 0, 'Saul_Lemke');
+        }
+        if (June[i] == 19738) {
+            June.splice(9, 0, 'Cale.Kemmer55');
+        }
+        if (June[i] == 22363) {
+            June.splice(11, 0, 'Matilda_Cruickshank47');
+        }
+        if (June[i] == 31175) {
+            June.splice(13, 0, 'Audreanne28');
+        }
+        if (June[i] == 40654) {
+            June.splice(15, 0, 'Maegan63');
+        }
+        if (June[i] == 42007) {
+            June.splice(17, 0, 'Oren_Koelpin93');
+        }
+        if (June[i] == 48836) {
+            June.splice(19, 0, 'Mireille.Deckow11');
+        }
+        if (June[i] == 51063) {
+            June.splice(21, 0, 'Ruth99');
+        }
+        if (June[i] == 58107) {
+            June.splice(23, 0, 'Ada_Lang');
+        }
+        if (June[i] == 63761) {
+            June.splice(25, 0, 'Ezra_Grady44');
+        }
+        if (June[i] == 73945) {
+            June.splice(27, 0, 'Vergie54');
+        }
+        if (June[i] == 79385) {
+            June.splice(29, 0, 'Ernestine9');
+        }
+        if (June[i] == 95918) {
+            June.splice(31, 0, 'Cleora.Spencer');
         }
     }
+
+    // Por fim faço a concatenação do mês de Junho no array meses
+    meses = meses.concat(June);
+}
+
+length += July.length;
+if (July.length != 0) {
+    meses = meses.concat(July);
+}
+
+length += August.length;
+if (August.length != 0) {
     meses = meses.concat(August);
 }
 
@@ -383,12 +262,20 @@ if (December.length != 0) {
     meses = meses.concat(December);
 }
 
-var index = 31;
-var index2 = 32;
+// Pegando a posição do usuário e do log do impostor
+var index = 201;
+var index2 = 200;
+
+// Chamando a função de mostrar o impostor
 mostrarImpostor(meses, index, index2);
 
+// Criando a função de mostrar o impostor
 function mostrarImpostor(meses, i, j) {
     console.log("Possivel(is) impostor(es): " + meses[i] + " .Log: " + meses[j]);
 }
 
-//! Caso com Resultado Errado!!
+// Por fim mostro o tempo de execução desde a função de ordenar até o fim do programa, devido a utilização do filter e do splice o tempo de execução é alto
+console.timeEnd('Timer');
+
+// Programa funcionando
+// Arquivo logNaveSbornia2.json contem 200 objetos que serão transformados em 400 valores -> 1 valor equivale ao log e 1 valor equivale ao usuário, logo 2 * 200 objetos
